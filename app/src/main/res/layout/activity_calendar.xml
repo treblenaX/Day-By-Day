@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calendar">
+
+    <TableLayout
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/calendarRow0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/dayBox0"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calendarRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/dayBox7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox10"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox11"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox12"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox13"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calendarRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/dayBox14"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox15"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox16"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox17"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox18"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox19"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox20"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calendarRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/dayBox21"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox22"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox23"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox24"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox25"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox26"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox27"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/calendarRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/dayBox28"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox29"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox30"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox31"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox32"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox33"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <View
+                    android:id="@+id/dayBox34"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="1dp"
+                    android:background="@android:color/darker_gray" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/suggestionBox"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tip: Going to bed at a consistent time helps your body develop a circadian rhythm"
+            android:textSize="18sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
