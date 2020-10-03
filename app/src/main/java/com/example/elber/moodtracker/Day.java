@@ -13,7 +13,7 @@ public class Day {
     }
 
     // the date which this Day occurred
-    LocalDate date;
+    final private LocalDate date;
 
     // the four metrics we're tracking: mood, energy, sleep, and anxiety
     // values range from 1-100 inclusive
@@ -38,6 +38,10 @@ public class Day {
     /////////////////////////////
     // accessors and modifiers //
     /////////////////////////////
+    public LocalDate getDate() {
+        return date;
+    }
+
     public int getMoodLevel() {
         return moodLevel;
     }
