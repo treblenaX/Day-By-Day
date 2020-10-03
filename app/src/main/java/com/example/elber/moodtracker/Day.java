@@ -9,7 +9,32 @@ public class Day {
 
     // Tag enum
     public enum Tag {
-        // todo: write some tags here, representing things that made the user's day good or bad
+        GOOD("good"),
+        BAD("bad");
+
+        private String val;
+
+        Tag(String value) {
+            this.val = value;
+        }
+
+        public String getVal() {
+            return this.val;
+        }
+
+        public static Tag valToTag(String val) {
+            for (Tag t : Tag.values()) {
+                if (t.getVal().equals(val)) {
+                    return t;
+                }
+            }
+
+            return null;
+        }
+
+        public String toString() {
+            return getVal();
+        }
     }
 
     // the date which this Day occurred
@@ -92,6 +117,16 @@ public class Day {
 
     public void removeTag(Tag tag) {
         this.tags.remove(tag);
+    }
+
+    public String toString() {
+        return date + " " +
+                moodLevel  + " " +
+                energyLevel + " " +
+                anxietyLevel + " " +
+                sleepLevel + " " +
+                tags.toString() + " " +
+                note;
     }
 
 }

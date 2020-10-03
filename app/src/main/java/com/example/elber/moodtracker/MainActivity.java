@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // todo: save the day in history and retrieve it
                 // List<Day> history = null;
-                List<Day> history = MoodTrackerDebug.generateDepressionHistory();
+                List<Day> history = MoodTrackerDebug.generateControlHistory();
 
                 // todo: diagnose and see if follow up questions should be asked
                 PatternEngine.Result r = PatternEngine.getInstance().analyze(history);

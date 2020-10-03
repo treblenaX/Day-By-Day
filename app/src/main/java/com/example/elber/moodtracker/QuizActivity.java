@@ -69,6 +69,7 @@ public class QuizActivity extends AppCompatActivity {
         // if enough positive, send to help
         if (positiveAnswers >= POSITIVE_ANSWER_THRESHOLD) {
             // todo: send to help screen
+            openCalendar();
         }
         else {
             // otherwise close

@@ -23,10 +23,10 @@ class MoodTrackerDebug {
         ArrayList<Day> days = new ArrayList<>();
         for (int i = 0; i < 90; i++) {
             Day d = new Day(LocalDate.of(i, 1, 1));
-            d.setSleepLevel(50);
-            d.setAnxietyLevel(50);
-            d.setEnergyLevel(50);
-            d.setMoodLevel(50);
+            d.setSleepLevel(70);
+            d.setAnxietyLevel(70);
+            d.setEnergyLevel(70);
+            d.setMoodLevel(70);
             days.add(d);
         }
         return days;
