@@ -1,5 +1,6 @@
 package com.example.elber.moodtracker;
 
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,6 +12,10 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 
 import java.util.List;
+=======
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+>>>>>>> master
 
 public class Calendar extends AppCompatActivity {
 
@@ -18,6 +23,7 @@ public class Calendar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
+<<<<<<< HEAD
 
         // todo: retrieve history from database
         List<Day> history = MoodTrackerDebug.generateControlHistory();
@@ -62,6 +68,8 @@ public class Calendar extends AppCompatActivity {
             n++;
         }
         return colors;
+=======
+>>>>>>> master
     }
 
 }

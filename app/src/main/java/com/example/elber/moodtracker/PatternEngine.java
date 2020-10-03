@@ -56,11 +56,14 @@ public class PatternEngine {
                 // if the sum of the counts reaches 9 out of a possible 15, return true
                 return lowMood + lowSleep + lowEnergy >= 9;
             }
+<<<<<<< HEAD
 
             @Override
             public String[] getQuestions() {
                 return secondaryQuestions;
             }
+=======
+>>>>>>> master
         },
 
         // Generalized Anxiety Disorder
@@ -103,11 +106,14 @@ public class PatternEngine {
                 // total days, return positive
                 return lowAnxiety + lowSleep > 10;
             }
+<<<<<<< HEAD
 
             @Override
             public String[] getQuestions() {
                 return secondaryQuestions;
             }
+=======
+>>>>>>> master
         },
 
         // Bipolar I Disorder
@@ -147,18 +153,24 @@ public class PatternEngine {
                 // if the sum of all counts reaches 25 of 30 days, return true
                 return (lowEnergy + lowMood + hiEnergy + hiMood) > 50;
             }
+<<<<<<< HEAD
 
             @Override
             public String[] getQuestions() {
                 return secondaryQuestions;
             }
+=======
+>>>>>>> master
         };
 
         // returns whether this history of days suggests a mental illness
         public abstract boolean diagnose(List<Day> days);
+<<<<<<< HEAD
 
         // returns an array of secondary questiosn to ask if illness is suspected
         public abstract String[] getQuestions();
+=======
+>>>>>>> master
     }
 
     // represents a Result returned by a call to analyze()
@@ -207,11 +219,14 @@ public class PatternEngine {
     // days: a list containing the days to analyze, sorted with most recent days at the beginning
     // returns: a Result object representing the findings of the analysis
     public Result analyze(List<Day> days) {
+<<<<<<< HEAD
         // if days is null, complain
         if (days == null) {
             throw new IllegalArgumentException("days cannot be null");
         }
 
+=======
+>>>>>>> master
         // create new Result object
         Result r = new Result();
 
