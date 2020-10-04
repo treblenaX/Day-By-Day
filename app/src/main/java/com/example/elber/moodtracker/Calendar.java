@@ -36,6 +36,7 @@ public class Calendar extends AppCompatActivity {
             for (int k = 0; k < 7; k++) {
                 View dayBox = layout.getChildAt(k);
                 dayBox.setBackgroundColor(colors[n]);
+                n++;
             }
         }
     }
@@ -44,7 +45,7 @@ public class Calendar extends AppCompatActivity {
     private int[] generateColors(List<Day> history) {
         int[] colors = new int[35];
         for (int i = 0; i < colors.length; i++) {
-            colors[i] = 0;
+            colors[i] = Color.GRAY;
         }
         int n = 0;
         int start = Math.min(history.size() - 1, 34);
