@@ -9,7 +9,6 @@ public class Day {
 
     // Tag enum
     public enum Tag {
-        // TODO: Add some actual enums
         GOOD("good"),
         BAD("bad");
 
@@ -129,4 +128,5 @@ public class Day {
                 tags.toString() + " " +
                 note;
     }
+
 }
