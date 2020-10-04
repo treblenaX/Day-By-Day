@@ -5,14 +5,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Parcelable;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -30,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // record this day's data
                 Day day = getDayFromSliders();
+                SQLiteHelper helper = new SQLiteHelper(c);
+                helper.storeDayToDB(day);
 
-                // todo: save the day in history and retrieve it
-                // List<Day> history = null;
-                List<Day> history = MoodTrackerDebug.generateControlHistory();
+                List<Day> history = helper.read30DaysFromDB();
+                // List<Day> history = MoodTrackerDebug.generateControlHistory();
 
-                // todo: diagnose and see if follow up questions should be asked
                 PatternEngine.Result r = PatternEngine.getInstance().analyze(history);
                 if (r.getPositives().size() > 0) {
                     Log.d("DIAGNOSIS", "Found evidence of following illnesses: " + r.getPositives());
@@ -54,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    // todo: implement activity/fragment for support
     // asks follow up questions for when a mental illness is detected
     private void askFollowUps(Set<PatternEngine.Illness> illnesses) {
         // for each illness detected

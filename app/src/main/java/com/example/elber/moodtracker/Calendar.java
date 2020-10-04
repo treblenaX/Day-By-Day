@@ -19,8 +19,9 @@ public class Calendar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
-        // todo: retrieve history from database
-        List<Day> history = MoodTrackerDebug.generateControlHistory();
+        // List<Day> history = MoodTrackerDebug.generateControlHistory();
+        SQLiteHelper helper = new SQLiteHelper(this);
+        List<Day> history = helper.read30DaysFromDB();
 
         // calculate a color for up to 35 past days
         int[] colors = generateColors(history);
@@ -35,6 +36,7 @@ public class Calendar extends AppCompatActivity {
             for (int k = 0; k < 7; k++) {
                 View dayBox = layout.getChildAt(k);
                 dayBox.setBackgroundColor(colors[n]);
+                n++;
             }
         }
     }
@@ -42,6 +44,9 @@ public class Calendar extends AppCompatActivity {
     // returns an array of colors to color the calendar with
     private int[] generateColors(List<Day> history) {
         int[] colors = new int[35];
+        for (int i = 0; i < colors.length; i++) {
+            colors[i] = Color.GRAY;
+        }
         int n = 0;
         int start = Math.min(history.size() - 1, 34);
         for (int i = start; i >= 0; i--) {
