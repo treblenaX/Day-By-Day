@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         for (PatternEngine.Illness illness : illnesses) {
             Intent i = new Intent(this, QuizActivity.class);
             i.putExtra("questions", illness.getQuestions());
+            i.putExtra("illnessName", illness.name());
             startActivity(i);
         }
     }
